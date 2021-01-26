@@ -17,7 +17,9 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" th:href="@{/resources/css/petclinic.css}"/>
+   	<!--<link rel="stylesheet" th:href="@{/resources/css/petclinic.css}"/>-->
+	<link rel="stylesheet" th:href="@{/resources/css/sirve.css}"/>
+	<!--<link rel="stylesheet" th:href="@{/resources/css/templatemo-training-studio.css}"/>-->
 
   </head>
 
@@ -70,6 +72,17 @@
   </nav>
   <div class="container-fluid">
       <div class="container xd-container">
+
+		 <!-- ***** Main Banner Area Start ***** -->
+		    <div class="main-banner" id="top">
+			    <video autoplay muted loop id="bg-video">
+		            <source  th:href="@{/resources/images/gym-video.mp4}" type="video/mp4" />
+		        </video>
+		        <div class="video-overlay header-text">
+	            <div class="caption">
+	                <h6>Lo mejor para tus mascotas</h6>
+	                <h2>Unete a <em>PetClinic</em></h2>
+            <div class="main-button scroll-to-section">
   
           <th:block th:include="${template}"/>
 
