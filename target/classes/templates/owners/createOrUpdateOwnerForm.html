@@ -3,7 +3,7 @@
 
 <body>
 
-  <h2 class="text-danger">Owner</h2>
+  <h2 class="text-info">Owner</h2>
   <form th:object="${owner}" class="form-horizontal" id="add-owner-form" method="post">
     <div class="form-group has-feedback text-danger">
       <input th:replace="~{fragments/inputField :: input ('First Name', 'firstName', 'text')}" />
